@@ -1,3 +1,1 @@
-# hyperparam blog
-
-index.md file
+hyperparam is the missing UI for machine learning
