@@ -1,0 +1,12 @@
+# site settings
+title: hyperparam blog
+description: hyperparam is the missing UI for machine learning
+baseurl: "/blog"
+url: "https://hyparam.github.io/blog"
+twitter_username: hyperparamapp
+github_username: hyparam
+
+# Build settings
+permalink: pretty
+theme: minima
+
