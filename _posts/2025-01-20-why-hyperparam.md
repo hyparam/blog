@@ -22,7 +22,7 @@ Aside: Apache Parquet files are a column-oriented data structure that contains a
 
 Hyparquet is a new JavaScript parquet parser which can efficiently query against parquet files stored in the cloud. This enables the creation of a new type of client-side only parquet data viewer which is significantly faster than anything that could be done with a server.
 
-<video>
+<video width="710" height="420" autoplay muted loop>
   <source src="{{site.baseurl}}/assets/images/hyperparam1.mp4" type="video/mp4">
 </video>
 
