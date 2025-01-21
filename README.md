@@ -1,6 +1,6 @@
 # Hyperparam Blog
 
-Hyperparam blog deployed to https://hyparam.github.io/blog/ using github actions and jekyll.
+Hyperparam blog deployed to https://blog.hyperparam.app/ using github actions and jekyll.
 
 ## Testing locally
 

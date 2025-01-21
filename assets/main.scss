@@ -9,8 +9,29 @@ body {
   font-family: 'Mulish', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.site-header {
+  background: #f8f8f8;
+}
+
+.site-title {
+  background: url(/assets/images/logo.svg) no-repeat left center;
+  background-size: 20px;
+  font-size: 22px;
+  padding-left: 36px;
+}
+
+blockquote {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
 p img {
   border-radius: 8px;
+  max-width: calc(100% - 10px);
+  margin: 0 5px;
 }
 
 // If you want to organize your custom styles into a separate partial:

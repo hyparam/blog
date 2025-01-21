@@ -18,7 +18,7 @@ Can we do better? If you want to build a highly performant user interface, there
 
 The problem is that ML datasets are massive (often multiple gigabytes of compressed text data), so it’s not obvious if it’s even possible to work with large scale datasets in the browser. However, by using modern data formats like Apache Parquet, and clever frontend engineering, it is in fact possible to work with massive datasets directly in the browser.
 
-Aside: Apache Parquet files are a column-oriented data structure that contains a built-in index. This allows tools like hadoop and duckdb to efficiently query parquet datasets without having to retrieve all the data. Furthermore it allows doing these queries without a server, simply by putting the parquet files in a storage service like S3. What if you could do this same trick in the browser, and pull in just the data needed to render the current view. Hello Hyparquet.
+> Aside: Apache Parquet files are a column-oriented data structure that contains a built-in index. This allows tools like hadoop and duckdb to efficiently query parquet datasets without having to retrieve all the data. Furthermore it allows doing these queries without a server, simply by putting the parquet files in a storage service like S3. What if you could do this same trick in the browser, and pull in just the data needed to render the current view. Hello Hyparquet.
 
 Hyparquet is a new JavaScript parquet parser which can efficiently query against parquet files stored in the cloud. This enables the creation of a new type of client-side only parquet data viewer which is significantly faster than anything that could be done with a server.
 
