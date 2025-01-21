@@ -1,0 +1,18 @@
+---
+---
+
+// Import Minima's default styles
+@import "minima";
+
+// Then add your own custom styles
+body {
+  font-family: 'Mulish', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p img {
+  border-radius: 5px;
+}
+
+// If you want to organize your custom styles into a separate partial:
+//@import "custom"; // (Make sure there's a _custom.scss in your _sass folder)
+
