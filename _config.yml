@@ -1,6 +1,6 @@
 # site settings
-title: hyperparam blog
-description: the missing UI for machine learning
+title: Hyperparam Blog
+description: The missing UI for dataset exploration and curation
 baseurl: "/blog"
 url: "https://hyparam.github.io/blog"
 twitter_username: hyperparamapp
