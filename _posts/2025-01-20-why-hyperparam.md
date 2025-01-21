@@ -22,7 +22,9 @@ Aside: Apache Parquet files are a column-oriented data structure that contains a
 
 Hyparquet is a new JavaScript parquet parser which can efficiently query against parquet files stored in the cloud. This enables the creation of a new type of client-side only parquet data viewer which is significantly faster than anything that could be done with a server.
 
-[hyperparam gif]
+<video>
+  <source src="{{site.baseurl}}/assets/images/hyperparam1.mp4" type="video/mp4">
+</video>
 
 The goal here is to get data engineers to look at their data 👀 Anyone who has worked with data for a model before knows that looking at your data is the key to understanding the domain you’re trying to model, and it is virtually impossible to do good data science without looking at your data. Looking at your data is the easiest way to find data and model issues, and is a constant source of ideas of how to improve them.
 
