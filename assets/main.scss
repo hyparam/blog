@@ -34,6 +34,19 @@ p img {
   margin: 0 5px;
 }
 
+ul.posts {
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer-heading {
+  display: none;
+}
+
+.social-media-list {
+  font-size: 12px;
+}
+
 // If you want to organize your custom styles into a separate partial:
 //@import "custom"; // (Make sure there's a _custom.scss in your _sass folder)
 

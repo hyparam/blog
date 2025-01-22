@@ -1,4 +1,8 @@
-# Data Quality First: How Browser-Based Tools Will Re-Shape AI
+---
+layout: post
+title: "Hyperparam: How Browser-Based Tools Will Re-Shape AI"
+date: 2025-01-20 22:40:00 -0700
+---
 
 What is the key to building the most advanced AI models? Data quality.
 
