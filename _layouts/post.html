@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  {% if page.banner_image %}
+{% if page.banner_image %}
+<div class="post-banner-wrapper" {% if page.banner_color %}style="background-color: {{ page.banner_color }};"{% endif %}>
   <div class="post-banner">
     <img src="{{ page.banner_image | relative_url }}" alt="{{ page.title }} banner" />
   </div>
-  {% endif %}
+</div>
+{% endif %}
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>

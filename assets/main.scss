@@ -48,15 +48,27 @@ ul.posts {
 }
 
 // Post banner styles
-.post-banner {
-  margin: -30px -30px 30px -30px;
+.post-banner-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 30px;
   overflow: hidden;
   max-height: 400px;
 
   @include media-query($on-palm) {
-    margin: -15px -15px 20px -15px;
     max-height: 250px;
+    margin-bottom: 20px;
   }
+}
+
+.post-banner {
+  max-width: $content-width;
+  margin: 0 auto;
+  overflow: hidden;
 
   img {
     width: 100%;
@@ -68,9 +80,8 @@ ul.posts {
   }
 }
 
-// Adjust post header when banner is present
-.post-banner + .post-header {
-  margin-top: 30px;
+.page-content {
+  padding-top: 0;
 }
 
 // If you want to organize your custom styles into a separate partial:
