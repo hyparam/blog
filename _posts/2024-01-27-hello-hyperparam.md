@@ -2,6 +2,7 @@
 layout: post
 title: "Hello Hyperparam"
 date: 2024-01-27 00:59:00 -0700
+banner_image: /assets/images/banner-hello.jpg
 ---
 
 > “Model behavior is not determined by architecture, hyperparameters, or optimizer choices. It’s determined by your dataset, nothing else. When you refer to “Lambda”, “ChatGPT”, “Bard”, or “Claude”, it’s not the model weights that you are referring to. It’s the dataset.” – jbetker @ openai

@@ -47,6 +47,32 @@ ul.posts {
   font-size: 12px;
 }
 
+// Post banner styles
+.post-banner {
+  margin: -30px -30px 30px -30px;
+  overflow: hidden;
+  max-height: 400px;
+
+  @include media-query($on-palm) {
+    margin: -15px -15px 20px -15px;
+    max-height: 250px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+// Adjust post header when banner is present
+.post-banner + .post-header {
+  margin-top: 30px;
+}
+
 // If you want to organize your custom styles into a separate partial:
 //@import "custom"; // (Make sure there's a _custom.scss in your _sass folder)
 
