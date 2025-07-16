@@ -84,6 +84,84 @@ ul.posts {
   padding-top: 0;
 }
 
+// Post grid styles for homepage
+.post-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 0;
+
+  @include media-query($on-palm) {
+    gap: 20px;
+    margin: 20px 0;
+  }
+}
+
+.post-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.post-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card-image {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include media-query($on-palm) {
+    height: 200px;
+  }
+
+  &.post-card-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.post-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  padding: 60px 20px 20px;
+  color: white;
+}
+
+.post-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+  color: white;
+
+  @include media-query($on-palm) {
+    font-size: 20px;
+  }
+}
+
+.post-card-date {
+  font-size: 14px;
+  opacity: 0.9;
+  display: block;
+}
+
 // If you want to organize your custom styles into a separate partial:
 //@import "custom"; // (Make sure there's a _custom.scss in your _sass folder)
 

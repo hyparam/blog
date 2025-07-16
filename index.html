@@ -4,15 +4,28 @@ layout: default
 
 <div class="home">
 
-  <ul class="posts">
+  <div class="post-grid">
     {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <br>
-        {{ post.content }}
-      </li>
+      <article class="post-card">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-card-link">
+          {% if post.banner_image %}
+            <div class="post-card-image" style="background-image: url('{{ post.banner_image }}'); {% if post.banner_color %}background-color: {{ post.banner_color }};{% endif %}">
+              <div class="post-card-overlay">
+                <h2 class="post-card-title">{{ post.title }}</h2>
+                <time class="post-card-date">{{ post.date | date: "%b %-d, %Y" }}</time>
+              </div>
+            </div>
+          {% else %}
+            <div class="post-card-image post-card-fallback" style="background-color: #333;">
+              <div class="post-card-overlay">
+                <h2 class="post-card-title">{{ post.title }}</h2>
+                <time class="post-card-date">{{ post.date | date: "%b %-d, %Y" }}</time>
+              </div>
+            </div>
+          {% endif %}
+        </a>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
 
 </div>
