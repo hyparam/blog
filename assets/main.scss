@@ -163,6 +163,27 @@ ul.posts {
   display: block;
 }
 
+// Hyperparam button styling
+.site-nav .page-link[href="https://hyperparam.app"] {
+  background-color: #7c3aed;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  margin-left: 10px;
+
+  &:hover {
+    background-color: #6d28d9;
+    color: white !important;
+  }
+
+  &:visited {
+    color: white !important;
+  }
+}
+
 // If you want to organize your custom styles into a separate partial:
 //@import "custom"; // (Make sure there's a _custom.scss in your _sass folder)
 
