@@ -18,7 +18,7 @@ This is where my goal started to go off the rails… Most modern AI datasets are
 
 Modern data viewer tools take anywhere from 5 sec (DuckDB) to 57 sec (Pandas) to load just 10 rows of data. The HCI community largely agrees that the ideal time-to-first-interactivity is 500 ms [[Lui, Heer 2014]](https://idl.cs.washington.edu/files/2014-Latency-InfoVis.pdf). Why should that not hold for data? Why is it acceptable for data to take 20x longer to load data than a webpage?
 
-The rest of this blog describes my multi-month journey to hyper-optimize time-to-first-data for parquet files. I am still on this journey but, along the way, released Hyparquet [Hyparquet](https://github.com/hyparam/hyparquet), the most conformant browser-based parquet file reader in existence. It’s open source and, most importantly, can load my 10 rows of data in 150 ms.
+The rest of this blog describes my multi-month journey to hyper-optimize time-to-first-data for parquet files. I am still on this journey but, along the way, released [Hyparquet](https://github.com/hyparam/hyparquet), the most conformant browser-based parquet file reader in existence. It’s open source and, most importantly, can load my 10 rows of data in 150 ms.
 
 ## Legacy Server Architecture
 
