@@ -14,8 +14,6 @@ seo:
   title: "Instant data for AI engineers with Hyparquet"
 ---
 
-# The Quest for Instant Data
-
 I just wanted to build a javascript code model.
 
 Following the common adage that “data quality determines model quality”, I did what every AI engineer does and tried to *look* at some training data hosted on HuggingFace. I did not care how, I just needed to see some data and interact with it \- search around rows, sort, and otherwise get a feel for the data quality. 
