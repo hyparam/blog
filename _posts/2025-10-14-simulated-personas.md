@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Conversational AI stress-testing: a practical guide"
+title: "Simulated Personas, Real Insights: Using Snowglobe and Hyperparam to Stress-Test Conversational AI"
 description: "Conversational AI stress-testing made simple. Generate synthetic conversations with Snowglobe and explore them interactively with Hyperparam."
 date: 2025-10-15 00:10:00 -0700
 author: "Diego Oppenheimer"
@@ -10,6 +10,8 @@ image: /assets/images/banner-personas.jpg
 banner_image: /assets/images/banner-personas.jpg
 banner_color: "#000000"
 keywords: [conversational AI, AI stress-testing, synthetic conversations, chatbot testing, conversational AI testing, simulated personas]
+seo:
+  title: "Conversational AI stress-testing: a practical guide"
 ---
 
 ## Testing our Conversations Before we Go Live

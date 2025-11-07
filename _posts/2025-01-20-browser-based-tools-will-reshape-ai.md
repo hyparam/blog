@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Browser-based tools for massive dataset exploration"
+title: "Hyperparam: How Browser-Based Tools Will Re-Shape AI"
 description: "Explore massive datasets in the browser. Hyperparam shows how browser-based tools are reshaping AI workflows through speed, visibility, and interactivity."
 date: 2025-01-20 22:40:00 -0700
 author: "Kenny Daniel"
@@ -10,6 +10,8 @@ image: /assets/images/banner-browser.jpg
 banner_image: /assets/images/banner-browser.jpg
 banner_color: "#07091c"
 keywords: [browser-based tools, massive dataset exploration, AI data workflows, browser data visualization, interactive data tools]
+seo:
+  title: "Browser-based tools for massive dataset exploration"
 ---
 
 What is the key to building the most advanced AI models? Data quality.

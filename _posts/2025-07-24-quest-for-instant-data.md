@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Instant data for AI engineers with Hyparquet"
+title: "Hyparquet: The Quest for Instant Data"
 description: "Instant data in the browser. Hyparquet delivers sub-second data loading for AI engineers with a JavaScript Parquet parser that loads in under 500ms."
 date: 2025-07-24 07:00:00 -0700
 author: "Kenny Daniel"
@@ -10,6 +10,8 @@ image: /assets/images/banner-hyparquet.jpg
 banner_image: /assets/images/banner-hyparquet.jpg
 banner_color: "#000000"
 keywords: [instant data, AI engineers, Hyparquet, JavaScript Parquet parser, sub-second data loading, browser-based data]
+seo:
+  title: "Instant data for AI engineers with Hyparquet"
 ---
 
 # The Quest for Instant Data

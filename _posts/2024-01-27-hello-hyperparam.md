@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "View your machine learning data in the browser"
+title: "Hello Hyperparam"
 description: "Machine learning data meets speed and clarity. Hyperparam lets you view and explore massive datasets quickly and efficiently."
 date: 2024-01-27 00:59:00 -0700
 author: "Kenny Daniel"
@@ -10,6 +10,8 @@ image: /assets/images/banner-hello.jpg
 banner_image: /assets/images/banner-hello.jpg
 banner_color: "#022a52"
 keywords: [machine learning data, browser-based data visualization, ML datasets, training data quality]
+seo:
+  title: "View your machine learning data in the browser"
 ---
 
 > “Model behavior is not determined by architecture, hyperparameters, or optimizer choices. It’s determined by your dataset, nothing else. When you refer to “Lambda”, “ChatGPT”, “Bard”, or “Claude”, it’s not the model weights that you are referring to. It’s the dataset.” – jbetker @ openai
