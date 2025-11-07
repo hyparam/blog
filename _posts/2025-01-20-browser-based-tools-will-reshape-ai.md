@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Hyperparam: How Browser-Based Tools Will Re-Shape AI"
-description: "Discover how browser-based data exploration and affordable dataset-scale inference are revolutionizing AI model training. Learn why JavaScript and Parquet are the future of ML data curation."
+title: "Browser-based tools for massive dataset exploration"
+description: "Explore massive datasets in the browser. Hyperparam shows how browser-based tools are reshaping AI workflows through speed, visibility, and interactivity."
 date: 2025-01-20 22:40:00 -0700
 author: "Kenny Daniel"
 categories: [machine-learning, product]
-tags: [AI, machine-learning, browser-tools, data-curation, parquet, hyparquet, JavaScript, dataset-quality, LLM, data-science]
+tags: [AI, machine-learning, browser-tools, data-curation, parquet, hyparquet, JavaScript, dataset-quality, LLM, data-science, browser-based-tools, data-exploration]
 image: /assets/images/banner-browser.jpg
 banner_image: /assets/images/banner-browser.jpg
 banner_color: "#07091c"
+keywords: [browser-based tools, massive dataset exploration, AI data workflows, browser data visualization, interactive data tools]
 ---
 
 What is the key to building the most advanced AI models? Data quality.
@@ -52,3 +53,7 @@ As for the cost, we are entering a new era of LLMs where for the first time it i
 We’re entering a new era in which dataset-scale inference and interactive, browser-based data exploration will define how AI models are built and refined. By combining efficient data formats, high-performance JavaScript interfaces, and affordable AI-based annotations, teams can finally put data quality front and center without prohibitively high costs or clunky workflows.
 
 The future belongs to those who seamlessly blend human expertise with AI-assisted insights—an approach that makes data cleaning faster, more intuitive, and ultimately, far more effective in powering the next generation of advanced AI models.
+
+---
+
+**Ready to explore your machine learning data?** Visit [Hyperparam](https://hyperparam.app) to start viewing and analyzing your datasets in seconds.
