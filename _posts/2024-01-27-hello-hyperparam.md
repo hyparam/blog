@@ -1,7 +1,12 @@
 ---
 layout: post
 title: "Hello Hyperparam"
+description: "Building the world's most scalable UI for machine learning data. Learn how Hyperparam combines browser-based tools with ML-powered data evaluation to create better training datasets."
 date: 2024-01-27 00:59:00 -0700
+author: "Kenny Daniel"
+categories: [product, machine-learning]
+tags: [machine-learning, data-quality, training-data, browser-tools, data-science, LLM, datasets]
+image: /assets/images/banner-hello.jpg
 banner_image: /assets/images/banner-hello.jpg
 banner_color: "#022a52"
 ---

@@ -5,6 +5,20 @@ url: "https://hyparam.github.io/blog"
 twitter_username: hyperparamapp
 github_username: hyparam
 
+# Social media and SEO
+author:
+  name: Hyperparam Team
+  twitter: hyperparamapp
+twitter:
+  username: hyperparamapp
+  card: summary_large_image
+social:
+  name: Hyperparam
+  links:
+    - https://twitter.com/hyperparamapp
+    - https://github.com/hyparam
+logo: /assets/favicon.png
+
 # Build settings
 permalink: pretty
 theme: minima

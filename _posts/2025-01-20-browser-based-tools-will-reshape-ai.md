@@ -1,7 +1,12 @@
 ---
 layout: post
 title: "Hyperparam: How Browser-Based Tools Will Re-Shape AI"
+description: "Discover how browser-based data exploration and affordable dataset-scale inference are revolutionizing AI model training. Learn why JavaScript and Parquet are the future of ML data curation."
 date: 2025-01-20 22:40:00 -0700
+author: "Kenny Daniel"
+categories: [machine-learning, product]
+tags: [AI, machine-learning, browser-tools, data-curation, parquet, hyparquet, JavaScript, dataset-quality, LLM, data-science]
+image: /assets/images/banner-browser.jpg
 banner_image: /assets/images/banner-browser.jpg
 banner_color: "#07091c"
 ---

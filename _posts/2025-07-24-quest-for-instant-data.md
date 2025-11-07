@@ -1,7 +1,12 @@
 ---
 layout: post
 title: "Hyparquet: The Quest for Instant Data"
+description: "The technical deep-dive into building Hyparquet: a blazingly fast JavaScript Parquet parser that loads data in under 500ms. Learn how we achieved sub-second data loading by eliminating backend servers and optimizing every millisecond."
 date: 2025-07-24 07:00:00 -0700
+author: "Kenny Daniel"
+categories: [engineering, performance]
+tags: [parquet, hyparquet, JavaScript, performance, browser-architecture, WebAssembly, data-visualization, latency-optimization, Apache-Parquet, compression]
+image: /assets/images/banner-hyparquet.jpg
 banner_image: /assets/images/banner-hyparquet.jpg
 banner_color: "#000000"
 ---

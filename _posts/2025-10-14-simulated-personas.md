@@ -1,7 +1,12 @@
 ---
 layout: post
 title: "Simulated Personas, Real Insights: Using Snowglobe and Hyperparam to Stress-Test Conversational AI"
+description: "Learn how to generate realistic synthetic conversations with Snowglobe and explore them interactively with Hyperparam. A practical guide to testing conversational AI with simulated personas before going live."
 date: 2025-10-15 00:10:00 -0700
+author: "Diego Oppenheimer"
+categories: [AI, testing]
+tags: [conversational-AI, simulation, synthetic-data, testing, Snowglobe, Hyperparam, personas, data-exploration, fine-tuning, evaluation]
+image: /assets/images/banner-personas.jpg
 banner_image: /assets/images/banner-personas.jpg
 banner_color: "#000000"
 ---

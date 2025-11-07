@@ -1,6 +1,37 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  {% if page.description %}"description": {{ page.description | jsonify }},{% endif %}
+  "image": "{{ site.url }}{{ page.image | default: page.banner_image }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": {{ page.author | default: "Hyperparam Team" | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/favicon.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }},{% endif %}
+  "articleSection": {{ page.categories | first | default: "Blog" | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
+
 {% if page.banner_image %}
 <div class="post-banner-wrapper" {% if page.banner_color %}style="background-color: {{ page.banner_color }};"{% endif %}>
   <div class="post-banner">
