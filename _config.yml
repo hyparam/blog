@@ -17,7 +17,7 @@ social:
   links:
     - https://twitter.com/hyperparamapp
     - https://github.com/hyparam
-logo: /assets/favicon.png
+logo: /assets/favicon.svg
 
 # Build settings
 permalink: pretty
