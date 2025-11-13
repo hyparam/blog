@@ -1,14 +1,12 @@
 # site settings
 title: Hyperparam Blog
 description: Insights on browser-based AI data visualization and exploration. See how better data builds smarter, more reliable models.
-url: "https://hyparam.github.io/blog"
+url: "https://blog.hyperparam.app"
 twitter_username: hyperparamapp
 github_username: hyparam
+linkedin_username: hyperparam
 
 # Social media and SEO
-author:
-  name: Hyperparam Team
-  twitter: hyperparamapp
 twitter:
   username: hyperparamapp
   card: summary_large_image
@@ -17,6 +15,7 @@ social:
   links:
     - https://twitter.com/hyperparamapp
     - https://github.com/hyparam
+    - https://www.linkedin.com/company/hyperparam/
 logo: /assets/favicon.svg
 
 # Build settings
