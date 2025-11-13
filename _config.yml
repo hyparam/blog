@@ -20,5 +20,5 @@ social:
 logo: /assets/favicon.svg
 
 # Build settings
-permalink: pretty
+permalink: /:title/
 theme: minima
