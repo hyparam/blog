@@ -28,6 +28,15 @@ p {
   margin-bottom: 20px;
 }
 
+ul li {
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+
+ul li::marker {
+  content: '-  ';
+}
+
 video,
 p img {
   border-radius: 8px;
@@ -165,7 +174,7 @@ ul.posts {
 
 // Hyperparam button styling
 .site-nav .page-link[href="https://hyperparam.app"] {
-  background-color: #7c3aed;
+  background-color: #222;
   color: white !important;
   padding: 8px 16px;
   border-radius: 20px;
