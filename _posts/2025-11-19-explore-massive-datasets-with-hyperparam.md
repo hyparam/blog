@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "Explore massive datasets with the Hyperparam AI agent"
-description: "The Hyperparam AI agent lets you inspect and refine massive datasets in real time. Move faster through your AI data and try it free during beta."
+title: "Explore massive datasets with the Hyperparam AI tool"
+description: "The Hyperparam AI tool lets you inspect and refine massive datasets in real time. Move faster through your AI data and try it free during beta."
 date: 2025-11-19 06:00:00 -0800
 author: "Kenny Daniel"
 categories: [product, AI]
 tags: [data-transformation, Hyperparam, AI-workflows, AI-data, browser-native, startup]
 image: /assets/images/banner-big-llm-data.jpg
 banner_image: /assets/images/banner-big-llm-data.jpg
+banner_alt: "AI producing planet-sized amounts of unstructured text"
 banner_color: "#000000"
 keywords: [Hyperparam data transformation, AI data tools, browser-native data, data transformation tool]
 seo:
-  title: "Meet the Hyperparam AI agent for massive datasets"
+  title: "Meet the Hyperparam AI tool for massive datasets"
 schema:
   type: BlogPosting
 ---

@@ -35,7 +35,7 @@ layout: default
 {% if page.banner_image %}
 <div class="post-banner-wrapper" {% if page.banner_color %}style="background-color: {{ page.banner_color }};"{% endif %}>
   <div class="post-banner">
-    <img src="{{ page.banner_image | relative_url }}" alt="{{ page.title }} banner" />
+    <img src="{{ page.banner_image | relative_url }}" alt="{{ page.banner_alt | default: page.title | append: ' banner' }}" />
   </div>
 </div>
 {% endif %}
