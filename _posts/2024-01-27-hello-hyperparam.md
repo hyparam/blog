@@ -8,7 +8,7 @@ categories: [product, machine-learning]
 tags: [machine-learning, data-quality, training-data, browser-tools, data-science, LLM, datasets, machine-learning-data, data-visualization]
 image: /assets/images/banner-hello.jpg
 banner_image: /assets/images/banner-hello.jpg
-banner_color: "#022a52"
+banner_color: "#10054b"
 keywords: [machine learning data, browser-based data visualization, ML datasets, training data quality]
 seo:
   title: "View your machine learning data in the browser"

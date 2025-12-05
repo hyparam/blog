@@ -126,10 +126,9 @@ ul.posts {
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
 
   &:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   }
 }
@@ -146,15 +145,34 @@ ul.posts {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: grayscale(40%);
+  transition: filter 0.3s ease;
 
   @include media-query($on-palm) {
     height: 200px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(107, 33, 168, 0.35) 0%, rgba(59, 28, 107, 0.45) 100%);
+    mix-blend-mode: color;
+    transition: opacity 0.3s ease;
   }
 
   &.post-card-fallback {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+.post-card:hover .post-card-image {
+  filter: grayscale(0%);
+
+  &::before {
+    opacity: 0;
   }
 }
 
