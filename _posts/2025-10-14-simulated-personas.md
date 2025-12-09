@@ -1,5 +1,6 @@
 ---
 layout: post
+hidden: true
 title: "Simulated Personas, Real Insights: Using Snowglobe and Hyperparam to Stress-Test Conversational AI"
 description: "Conversational AI stress-testing made simple. Generate synthetic conversations with Snowglobe and explore them interactively with Hyperparam."
 date: 2025-10-15 00:10:00 -0700

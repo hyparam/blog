@@ -9,7 +9,7 @@ seo:
 <div class="home">
 
   <div class="post-grid">
-    {% for post in site.posts %}
+    {% for post in site.posts %}{% unless post.hidden %}
       <article class="post-card">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-card-link">
           {% if post.banner_image %}
@@ -29,7 +29,7 @@ seo:
           {% endif %}
         </a>
       </article>
-    {% endfor %}
+    {% endunless %}{% endfor %}
   </div>
 
 </div>
