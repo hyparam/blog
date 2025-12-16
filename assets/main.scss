@@ -77,12 +77,78 @@ ul.posts {
 .footer-heading {
   display: none;
 }
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 0;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+  }
+}
+
+.footer-col-left {
+  flex: 1;
+  width: auto;
+  margin-right: 40px;
+
+  @include media-query($on-palm) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-col-right {
+  flex-shrink: 0;
+  width: auto;
+
+  @include media-query($on-palm) {
+    width: 100%;
+  }
+}
+
 .footer-col-wrapper li::before {
   display: none;
 }
 
+.contact-list {
+  margin-bottom: 10px;
+
+  .p-name {
+    font-weight: 600;
+    font-size: 16px;
+
+    a {
+      color: #111;
+      text-decoration: none;
+
+      &:hover {
+        color: #6d28d9;
+      }
+    }
+  }
+}
+
+.footer-description {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  max-width: 400px;
+}
+
 .social-media-list {
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 }
 
 // Post banner styles

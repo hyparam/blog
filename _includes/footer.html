@@ -1,0 +1,20 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-left">
+        <ul class="contact-list">
+          <li class="p-name">
+            <a href="https://blog.hyperparam.app">{{ site.title | escape }}</a>
+          </li>
+        </ul>
+        <p class="footer-description">{{- site.description | escape -}}</p>
+      </div>
+
+      <div class="footer-col footer-col-right">
+        {%- include social.html -%}
+      </div>
+    </div>
+  </div>
+</footer>
