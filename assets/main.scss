@@ -20,8 +20,13 @@ body {
   padding-left: 36px;
 }
 
+.wrapper {
+  max-width: 660px;
+}
+
 h1, h2, h3 {
-  margin-top: 40px;
+  font-weight: 600;
+  margin-top: 50px;
 }
 .post-content h2 {
   font-size: 20pt;
@@ -42,13 +47,19 @@ p {
   margin-bottom: 20px;
 }
 
-ul li {
-  margin-bottom: 8px;
-  padding-left: 4px;
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 20px;
 }
-
-ul li::marker {
-  content: '-  ';
+ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+  margin-bottom: 8px;
+}
+ul li::before {
+  content: '–';
 }
 
 video,
@@ -64,6 +75,9 @@ ul.posts {
 }
 
 .footer-heading {
+  display: none;
+}
+.footer-col-wrapper li::before {
   display: none;
 }
 
