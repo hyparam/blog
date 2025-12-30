@@ -53,13 +53,14 @@ ul {
   margin-left: 20px;
 }
 ul li {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 20px;
+  position: relative;
+  padding-left: 24px;
   margin-bottom: 8px;
 }
 ul li::before {
   content: '–';
+  position: absolute;
+  left: 0;
 }
 
 video,
