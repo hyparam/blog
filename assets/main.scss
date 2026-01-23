@@ -79,6 +79,10 @@ ul.posts {
   display: none;
 }
 
+.footer-col {
+  padding: 0;
+}
+
 .footer-col-wrapper {
   display: flex;
   justify-content: space-between;
@@ -101,6 +105,16 @@ ul.posts {
   }
 }
 
+.footer-col-left a {
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    color: #6d28d9;
+  }
+}
+
 .footer-col-right {
   flex-shrink: 0;
   width: auto;
@@ -114,26 +128,9 @@ ul.posts {
   display: none;
 }
 
-.contact-list {
-  margin-bottom: 10px;
-
-  .p-name {
-    font-weight: 600;
-    font-size: 16px;
-
-    a {
-      color: #111;
-      text-decoration: none;
-
-      &:hover {
-        color: #6d28d9;
-      }
-    }
-  }
-}
-
 .footer-description {
   margin: 0;
+  margin-top: 16px;
   font-size: 14px;
   color: #666;
   max-width: 400px;

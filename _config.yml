@@ -1,6 +1,6 @@
 # site settings
 title: Hyperparam Blog
-description: Insights on browser-based AI data visualization and exploration. See how better data builds smarter, more reliable models.
+description: Notes on working with LLM datasets in the browser.
 url: "https://blog.hyperparam.app"
 twitter_username: hyperparamapp
 github_username: hyparam
