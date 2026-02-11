@@ -107,7 +107,7 @@ Try the [hightable demo](https://hyparam.github.io/demos/hightable/#/large):
 
 HighTable is also used in the [Parquet viewer](https://hyparam.github.io/demos/hyparquet/), on [source.coop](https://source.coop/jrc-lucas/jrc-lucas-ml/ml_data/classes_dataset.csv) and in [Hyperparam](https://hyperparam.app):
 
-<a title="Try HighTable in Hyperparam, the workbench for LLM datasets" href="https://hyperparam.app"><img alt="HighTable embedded in hyperparam.app" src="./hightable.png"></a>
+<a title="Try HighTable in Hyperparam, the workbench for LLM datasets" href="https://hyperparam.app"><img alt="HighTable embedded in hyperparam.app" src="/assets/images/hightable-hyperparam.webp"></a>
 
 ## Scrolling basics
 
