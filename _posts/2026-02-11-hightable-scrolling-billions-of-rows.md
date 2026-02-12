@@ -127,7 +127,7 @@ In the following widget, scroll the left box up and down to see how the right bo
 
 > If you use a keyboard, you can focus the left box with <kbd>Tab</kbd>, and scroll with the arrow keys <kbd>⏶</kbd> and <kbd>⏷</kbd>. Otherwise, you can use mouse wheel, drag the scroll bar, or slide on a touch screen.
 
-<iframe src="https://rednegra.net/embed/scroll-native" style="height: 729px; width:100%; border:none; overflow:hidden;"></iframe>
+<iframe src="https://rednegra.net/embed/scroll-native" style="height: 1000px; width:100%; border:none; overflow:hidden;"></iframe>
 
 The component is delimited by its fixed-size <span class="viewport">viewport</span> (blue border). The <span class="table"><em>table</em></span> (golden border) is rendered inside the container. As its <span class="table">height</span> is larger than the <span class="viewport">viewport height</span>, only part of the table is visible, and a vertical scrollbar lets changing the visible part. <strong>The inner <span class="table">table</span> element moves up and down within the <span class="viewport">viewport</span></strong>, creating the scrolling effect.
 
@@ -167,7 +167,7 @@ The first challenge when working on a large dataset is that it will not fit in y
 
 The following widget shows how lazy loading works. Scroll the left box up and down to see how the cells are loaded on demand on the right side:
 
-<iframe src="https://rednegra.net/embed/scroll-lazy-load" style="height:680px; width:100%; border:none; overflow:hidden;"></iframe>
+<iframe src="https://rednegra.net/embed/scroll-lazy-load" style="height:800px; width:100%; border:none; overflow:hidden;"></iframe>
 
 In the <span class="table">table</span>, only the visible cells are loaded. When scrolling, newly visible cells are requested and loaded in the background, and rendered when available.
 
@@ -266,7 +266,7 @@ The <span class="canvas">canvas</span> serves as a reference for absolutely posi
 
 The following widget shows how table slicing works. Scroll the left box up and down to see how the right box mimics the scrolling effect, while rendering only the visible rows. Toggle the <span class="full-table">full table</span> button to see how the rendered rows fit in the full table:
 
-<iframe src="https://rednegra.net/embed/scroll-slice" style="height:760px; width:100%; border:none; overflow:hidden;"></iframe>
+<iframe src="https://rednegra.net/embed/scroll-slice" style="height:980px; width:100%; border:none; overflow:hidden;"></iframe>
 
 On the right side, you see that only the visible rows are rendered. The <span class="table">table</span> slice contains 6 rows instead of 10 (or 7, depending on the scroll position).
 
@@ -352,7 +352,7 @@ This lets the user navigate through the whole table, even with billions of rows.
 
 The following widget shows how scrollbar downscaling works. Scroll the left box up and down to see how the right box mimics the scrolling effect, allowing to navigate through ten billion rows.
 
-<iframe src="https://rednegra.net/embed/scroll-downscale" style="height:857px; width:100%; border:none; overflow:hidden;"></iframe>
+<iframe src="https://rednegra.net/embed/scroll-downscale" style="height:1170px; width:100%; border:none; overflow:hidden;"></iframe>
 
 But there is a drawback. The scroll bar precision is limited to 1 <em>physical</em> pixel. On "high-resolution" screens, the apparent precision is a fraction of a <em>CSS</em> pixel (1 / [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio)). But let's keep one pixel for simplicity.
 
@@ -422,7 +422,7 @@ Now, the user can navigate around the current row, but also jump to any part of 
 
 The following widget shows the dual scrolling mode. Scroll the left box up and down to see how the right box mimics the scrolling effect, allowing to navigate both locally and globally through ten billion rows.
 
-<iframe src="https://rednegra.net/embed/scroll-dual" style="height:788px; width:100%; border:none; overflow:hidden;"></iframe>
+<iframe src="https://rednegra.net/embed/scroll-dual" style="height:1040px; width:100%; border:none; overflow:hidden;"></iframe>
 
 With this approach, small scroll moves appear local, while large scroll moves jump to the expected global position. The user can navigate through the whole table, and reach every row. The user can scroll as expected in the browser, with their mouse wheel, touchpad, keyboard (when the table is focused) or scrollbar.
 
