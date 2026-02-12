@@ -8,7 +8,7 @@ categories: [engineering, open-source]
 tags: [HighTable, virtual-scrolling, React, virtualization, performance, accessibility, JavaScript]
 image: /assets/images/banner-hightable-scrolling.jpg
 banner_image: /assets/images/banner-hightable-scrolling.jpg
-banner_alt: "A Qur'an scroll (tumar) from eastern Anatolia, dated 1353-54"
+banner_alt: "Scroll"
 banner_color: "#000000"
 keywords: [HighTable, virtual scrolling, billions of rows, React, virtualization]
 canonical_url: https://rednegra.net/blog/20260212-virtual-scroll/
