@@ -4,44 +4,183 @@
 // Import Minima's default styles
 @import "minima";
 
-// Then add your own custom styles
+// Brand tokens: the hyperparam.app homepage black and purple style.
+// Source of truth: styles/design-tokens.css (--brand-*) in hyparam/hyperparam.app.
+// Keep these values in sync with that file.
+:root {
+  --brand-page-bg: oklch(0.14 0.014 275);
+  --brand-surface: oklch(0.19 0.013 270);
+  --brand-surface-alt: oklch(0.22 0.013 270);
+  --brand-surface-elev: oklch(0.25 0.013 270);
+  --brand-ink: oklch(0.96 0.005 80);
+  --brand-mute: oklch(0.72 0.01 270);
+  --brand-faint: oklch(0.52 0.01 270);
+  --brand-line: oklch(0.3 0.014 270);
+  --brand-line-strong: oklch(0.4 0.014 270);
+  --brand-accent: oklch(0.75 0.17 285);
+  --brand-accent-dim: oklch(0.35 0.09 285);
+  --brand-accent-wash: oklch(0.75 0.17 285 / 0.10);
+  --brand-accent-wash-faint: oklch(0.75 0.17 285 / 0.05);
+  --brand-error: oklch(0.7 0.13 25);
+  --brand-success: oklch(0.88 0.1 150);
+  --brand-grid-image:
+    linear-gradient(var(--brand-accent-wash) 1px, transparent 1px),
+    linear-gradient(90deg, var(--brand-accent-wash) 1px, transparent 1px),
+    linear-gradient(var(--brand-accent-wash-faint) 1px, transparent 1px),
+    linear-gradient(90deg, var(--brand-accent-wash-faint) 1px, transparent 1px);
+  --brand-grid-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+
+  --brand-font-sans: 'Inter', 'Public Sans', 'Helvetica Neue', Arial, sans-serif;
+  --brand-font-mono: 'JetBrains Mono', ui-monospace, 'Consolas', 'Monaco', monospace;
+  --brand-text-h1: 36px;
+  --brand-text-h2: 30px;
+  --brand-text-h3: 17px;
+  --brand-text-body: 16px;
+  --brand-text-small: 14px;
+  --brand-text-label: 11px;
+  --brand-tracking-h1: -0.03em;
+  --brand-tracking-h2: -0.02em;
+  --brand-tracking-h3: -0.01em;
+  --brand-tracking-label: 0.08em;
+  --brand-leading-heading: 1.15;
+  --brand-leading-body: 1.6;
+
+  --brand-radius-control: 10px;
+  --brand-radius-code: 12px;
+  --brand-radius-card: 14px;
+  --brand-max-width-prose: 760px;
+  --brand-cta-shadow: 0 18px 44px -18px var(--brand-accent);
+  --brand-cta-shadow-hover: 0 22px 54px -18px var(--brand-accent);
+  --brand-transition: 120ms ease;
+}
+
 body {
-  font-family: 'Mulish', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--brand-page-bg);
+  background-image: var(--brand-grid-image);
+  background-size: var(--brand-grid-size);
+  color: var(--brand-mute);
+  font-family: var(--brand-font-sans);
+  font-size: var(--brand-text-body);
+  line-height: var(--brand-leading-body);
 }
 
 .site-header {
-  background: #f8f8f8;
+  background: color-mix(in oklab, var(--brand-surface) 85%, transparent);
+  backdrop-filter: blur(10px);
+  border-top: 0;
+  border-bottom: 1px solid var(--brand-line);
 }
 
-.site-title {
-  background: url(/assets/images/logo.svg) no-repeat left center;
-  background-size: 20px;
-  font-size: 22px;
+.site-title,
+.site-title:visited {
+  color: var(--brand-ink);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: var(--brand-tracking-h3);
   padding-left: 36px;
+  position: relative;
+}
+// Logo artwork is #111; invert it to read on the dark header
+.site-title::before {
+  background: url(/assets/images/logo.svg) no-repeat center / contain;
+  content: '';
+  filter: invert(1);
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+}
+
+.site-nav {
+  background-color: transparent;
+
+  .page-link {
+    color: var(--brand-mute);
+  }
+
+  @include media-query($on-palm) {
+    background-color: var(--brand-surface);
+    border-color: var(--brand-line);
+
+    .menu-icon > svg path {
+      fill: var(--brand-mute);
+    }
+  }
 }
 
 .wrapper {
-  max-width: 660px;
+  max-width: var(--brand-max-width-prose);
 }
 
-h1, h2, h3 {
-  font-weight: 600;
-  line-height: 1.3;
+a,
+a:visited {
+  color: var(--brand-accent);
+  transition: color var(--brand-transition);
+}
+a:hover {
+  color: var(--brand-ink);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand-ink);
+  font-weight: 500;
+  line-height: var(--brand-leading-heading);
   margin-top: 50px;
 }
+h1, .post-title {
+  font-size: var(--brand-text-h1);
+  letter-spacing: var(--brand-tracking-h1);
+}
+.post-title {
+  line-height: var(--brand-leading-heading);
+  @include media-query($on-laptop) {
+    font-size: var(--brand-text-h1);
+  }
+}
 .post-content h2 {
-  font-size: 20pt;
+  font-size: var(--brand-text-h2);
+  letter-spacing: var(--brand-tracking-h2);
+  @include media-query($on-laptop) {
+    font-size: var(--brand-text-h2);
+  }
 }
 .post-content h3 {
-  font-size: 14pt;
+  font-size: var(--brand-text-h3);
+  letter-spacing: var(--brand-tracking-h3);
+  @include media-query($on-laptop) {
+    font-size: var(--brand-text-h3);
+  }
 }
 /* h3 after h2 */
 .post-content h2 + h3 {
   margin-top: 20px;
 }
 
+strong, b {
+  color: var(--brand-ink);
+}
+
+.post-meta {
+  color: var(--brand-faint);
+  font-family: var(--brand-font-mono);
+  font-size: var(--brand-text-label);
+  letter-spacing: var(--brand-tracking-label);
+}
+
 blockquote {
-  font-size: 16px;
+  border-left: 1px solid var(--brand-accent);
+  color: var(--brand-mute);
+  font-size: var(--brand-text-body);
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--brand-line);
 }
 
 p {
@@ -59,14 +198,81 @@ ul li {
   margin-bottom: 8px;
 }
 ul li::before {
+  color: var(--brand-accent);
   content: '–';
   position: absolute;
   left: 0;
 }
 
+// Code: matches the homepage's SQL> query block
+pre,
+code {
+  font-family: var(--brand-font-mono);
+  font-size: var(--brand-text-small);
+}
+code {
+  background-color: var(--brand-surface-alt);
+  border: 1px solid var(--brand-line);
+  border-radius: 4px;
+  color: var(--brand-ink);
+}
+pre,
+.highlight,
+.highlight pre {
+  background-color: var(--brand-surface);
+  color: var(--brand-ink);
+}
+pre {
+  border: 1px solid var(--brand-line);
+  border-radius: var(--brand-radius-code);
+  padding: 16px 20px;
+
+  > code {
+    background: none;
+    border: 0;
+  }
+}
+.highlighter-rouge .highlight {
+  background: none;
+  border-radius: var(--brand-radius-code);
+}
+
+// Rouge syntax colors, remapped from Minima's light theme to brand tokens
+.highlight {
+  .c, .c1, .cm, .cs, .cp { color: var(--brand-faint); font-style: italic; }
+  .k, .kc, .kd, .kn, .kp, .kr, .kt, .ow, .nt { color: var(--brand-accent); font-weight: normal; }
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss { color: var(--brand-success); }
+  .m, .mf, .mh, .mi, .il, .mo, .bp { color: var(--brand-error); }
+  .n, .na, .nb, .nc, .nd, .ne, .nf, .ni, .nl, .nn, .no, .nv, .vc, .vg, .vi, .o, .p, .w { color: var(--brand-ink); font-weight: normal; }
+  .err { background-color: transparent; color: var(--brand-error); }
+  .gd { background-color: transparent; color: var(--brand-error); }
+  .gi { background-color: transparent; color: var(--brand-success); }
+  .gh, .gu, .gs, .gp, .go, .gr, .gt, .ge { color: var(--brand-mute); }
+}
+
+table {
+  border: 1px solid var(--brand-line);
+  color: var(--brand-mute);
+
+  tr:nth-child(even) {
+    background-color: var(--brand-surface);
+  }
+  th {
+    background-color: var(--brand-surface-alt);
+    border: 1px solid var(--brand-line);
+    border-bottom-color: var(--brand-line-strong);
+    color: var(--brand-ink);
+    font-weight: 500;
+  }
+  td {
+    border: 1px solid var(--brand-line);
+  }
+}
+
 video,
 p img {
-  border-radius: 8px;
+  border: 1px solid var(--brand-line);
+  border-radius: var(--brand-radius-card);
   max-width: calc(100% - 10px);
   margin: 0 5px;
 }
@@ -74,6 +280,11 @@ p img {
 ul.posts {
   list-style-type: none;
   margin: 0;
+}
+
+.site-footer {
+  background: var(--brand-surface);
+  border-top: 1px solid var(--brand-line);
 }
 
 .footer-heading {
@@ -85,6 +296,7 @@ ul.posts {
 }
 
 .footer-col-wrapper {
+  color: var(--brand-mute);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -107,12 +319,12 @@ ul.posts {
 }
 
 .footer-col-left a {
-  color: #111;
-  font-weight: 700;
+  color: var(--brand-ink);
+  font-weight: 600;
   text-decoration: none;
 
   &:hover {
-    color: #6d28d9;
+    color: var(--brand-accent);
   }
 }
 
@@ -132,12 +344,13 @@ ul.posts {
 .footer-description {
   margin: 0;
   margin-top: 16px;
-  font-size: 14px;
-  color: #666;
+  font-size: var(--brand-text-small);
+  color: var(--brand-faint);
   max-width: 400px;
 }
 
 .social-media-list {
+  font-family: var(--brand-font-mono);
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -147,6 +360,15 @@ ul.posts {
     display: flex;
     align-items: center;
     gap: 8px;
+    color: var(--brand-mute);
+
+    &:hover {
+      color: var(--brand-ink);
+    }
+  }
+
+  .svg-icon {
+    fill: currentColor;
   }
 }
 
@@ -161,6 +383,7 @@ ul.posts {
   margin-bottom: 30px;
   overflow: hidden;
   max-height: 400px;
+  border-bottom: 1px solid var(--brand-line);
 
   @include media-query($on-palm) {
     max-height: 250px;
@@ -178,6 +401,7 @@ ul.posts {
     height: auto;
     display: block;
     object-fit: cover;
+    border: 0;
     border-radius: 0;
     margin: 0;
   }
@@ -203,12 +427,13 @@ ul.posts {
 .post-card {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s ease;
+  border: 1px solid var(--brand-line);
+  border-radius: var(--brand-radius-card);
+  background: var(--brand-surface);
+  transition: border-color var(--brand-transition);
 
   &:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border-color: var(--brand-accent);
   }
 }
 
@@ -235,8 +460,9 @@ ul.posts {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(107, 33, 168, 0.35) 0%, rgba(59, 28, 107, 0.45) 100%);
+    background: linear-gradient(135deg, var(--brand-accent-dim) 0%, var(--brand-page-bg) 100%);
     mix-blend-mode: color;
+    opacity: 0.6;
     transition: opacity 0.3s ease;
   }
 
@@ -260,18 +486,18 @@ ul.posts {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  background: linear-gradient(to top, var(--brand-page-bg) 0%, transparent 100%);
   padding: 60px 20px 20px;
-  color: white;
+  color: var(--brand-ink);
 }
 
 .post-card-title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: var(--brand-tracking-h2);
   margin: 0 0 8px 0;
   line-height: 1.3;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: var(--brand-ink);
 
   @include media-query($on-palm) {
     font-size: 20px;
@@ -279,32 +505,35 @@ ul.posts {
 }
 
 .post-card-date {
-  font-size: 14px;
-  opacity: 0.9;
+  color: var(--brand-mute);
+  font-family: var(--brand-font-mono);
+  font-size: var(--brand-text-label);
+  letter-spacing: var(--brand-tracking-label);
   display: block;
 }
 
-// Hyperparam button styling
-.site-nav .page-link[href="https://hyperparam.app"] {
-  background-color: #222;
-  color: white !important;
-  padding: 8px 16px;
-  border-radius: 20px;
-  text-decoration: none;
+// "Back to Hyperparam": homepage primary CTA
+.site-nav .page-link[href="https://hyperparam.app"],
+.site-nav .page-link[href="https://hyperparam.app"]:visited {
+  background: var(--brand-accent);
+  border-radius: var(--brand-radius-control);
+  box-shadow: var(--brand-cta-shadow);
+  color: var(--brand-page-bg) !important;
+  font-size: var(--brand-text-small);
   font-weight: 500;
-  transition: background-color 0.2s ease;
   margin-left: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: transform var(--brand-transition), box-shadow var(--brand-transition), filter var(--brand-transition);
 
   &:hover {
-    background-color: #6d28d9;
-    color: white !important;
-  }
-
-  &:visited {
-    color: white !important;
+    background: var(--brand-accent);
+    box-shadow: var(--brand-cta-shadow-hover);
+    color: var(--brand-page-bg) !important;
+    filter: brightness(1.08);
+    transform: translateY(-1px);
   }
 }
 
 // If you want to organize your custom styles into a separate partial:
 //@import "custom"; // (Make sure there's a _custom.scss in your _sass folder)
-
