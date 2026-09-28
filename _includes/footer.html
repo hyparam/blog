@@ -1,16 +1,65 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-left">
-        <a href="https://blog.hyperparam.app">{{ site.title | escape }}</a>
-        <p class="footer-description">{{- site.description | escape -}}</p>
+<!-- Mirrors the hyperparam.app footer: components/landing/LandingFooter.tsx in hyparam/hyperparam.app -->
+<footer class="hp-footer">
+  <div class="hp-footer-inner">
+    <div>
+      <div class="hp-footer-brand">
+        <svg aria-hidden="true" height="1.5em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 872 1000" fill="currentColor">
+  <path d="m697.6 395.6-220 128.4v257.4l220-128.4z"/>
+  <path d="m174.4 395.6v257.3l220 128.4v-257.4l-199.9-116.6z"/>
+  <path d="m436 194.4-220.5 128.7 220.5 128.7 220.5-128.7z"/>
+  <path d="m436 0.5c-6.311 0-12.62 1.642-18.27 4.919l-399.3 231.5c-11.23 6.515-18.15 18.52-18.15 31.5v463.1c0.002062 12.99 6.917 24.99 18.15 31.5l399.3 231.5c11.3 6.552 25.24 6.552 36.54 0l399.3-231.5c11.23-6.515 18.15-18.52 18.15-31.5v-463.1c-2e-3 -12.99-6.917-24.99-18.15-31.5l-399.3-231.5c-5.65-3.276-11.96-4.919-18.27-4.919zm-7.276 104.7a41.6 41.66 0 0 1 28.21 5.02l303.2 176.9a41.6 41.66 0 0 1 9.878 8.354 41.6 41.66 0 0 1 1.463 1.626 41.6 41.66 0 0 1 6.382 11.1 41.6 41.66 0 0 1 0.5894 1.829 41.6 41.66 0 0 1 2.317 13.5v353.4a41.6 41.66 0 0 1-20.65 36.02l-303.2 176.9a41.6 41.66 0 0 1-1.057 0.3862 41.6 41.66 0 0 1-11.85 4.37 41.6 41.66 0 0 1-1.748 0.2431 41.6 41.66 0 0 1-13.07 0.0393 41.6 41.66 0 0 1-1.037-0.2446 41.6 41.66 0 0 1-12.64-4.573 41.6 41.66 0 0 1-0.3455-0.162 41.6 41.66 0 0 1-0.122-0.0629l-303.2-176.9a41.6 41.66 0 0 1-20.65-36.02v-353.8a41.6 41.66 0 0 1 0.8739-4.939 41.6 41.66 0 0 1 1.077-6.158 41.6 41.66 0 0 1 4.228-9.512 41.6 41.66 0 0 1 2.744-4.797 41.6 41.66 0 0 1 10.49-9.512 41.6 41.66 0 0 1 1.219-1.098l303.2-176.9a41.6 41.66 0 0 1 13.66-5.02z"/>
+</svg>
+        <span class="hp-footer-brand-name">hyperparam</span>
       </div>
-
-      <div class="footer-col footer-col-right">
-        {%- include social.html -%}
+      <div class="hp-footer-socials">
+        <a href="https://github.com/hyparam" aria-label="GitHub"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+    <path d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091 2.026 2.026 0 0 1-.872-.39 1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813.282.186.566.28.852.28.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234 5.314 5.314 0 0 1-1.223-.507 3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365-.177-.564-.266-1.215-.266-1.952 0-1.049.342-1.942 1.027-2.68-.32-.788-.29-1.673.091-2.652.252-.079.625-.02 1.119.175.494.195.856.362 1.086.5.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143.39.98.424 1.864.103 2.653.685.737 1.028 1.63 1.028 2.68 0 .737-.089 1.39-.267 1.957-.177.568-.407 1.023-.689 1.366-.282.343-.633.63-1.053.865-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z"/>
+  </svg></a>
+        <a href="https://www.linkedin.com/company/hyperparam" aria-label="LinkedIn"><svg aria-hidden="true" width="14" height="14" version="1.1" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+    <path d="m8 0c-4.418 0-8 3.582-8 8v56c0 4.418 3.582 8 8 8h56c4.418 0 8-3.582 8-8v-56c0-4.418-3.582-8-8-8h-56zm8.35 10c3.507 0 6.348 2.864 6.348 6.396 0 3.533-2.84 6.398-6.348 6.398-3.507 0-6.35-2.866-6.35-6.398 0-3.533 2.842-6.396 6.35-6.396zm33.03 16.27c7.353 0 12.62 4.491 12.62 13.78v21.95h-10.68v-18.2c0-4.989-1.897-7.777-5.846-7.777-4.296 0-6.541 2.901-6.541 7.777v18.2h-10.3v-34.67h10.3v4.668s3.097-5.729 10.45-5.729zm-38.35 1.061h10.74v34.67h-10.74v-34.67z"/>
+  </svg></a>
+        <a href="https://www.youtube.com/@HyperparamApp" aria-label="YouTube"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+  </svg></a>
+        <a href="https://x.com/hyperparamapp" aria-label="X"><svg aria-hidden="true" width="13" height="13" fill="none" version="1.1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <path d="m75.92 54.2 46.63-54.2h-11.05l-40.49 47.06-32.34-47.06h-37.3l48.9 71.16-48.9 56.84h11.05l42.75-49.7 34.15 49.7h37.3l-50.71-73.8zm-15.13 17.59-4.954-7.086-39.42-56.39h16.97l78.12 111.7h-16.97l-33.74-48.27z" fill="currentColor" stroke-width=".1044"/>
+  </svg></a>
       </div>
+      <div class="hp-footer-copyright">© 2026 hyparam corporation</div>
     </div>
+      <div>
+        <div class="hp-footer-title">Product</div>
+        <ul class="hp-footer-list">
+          <li><a href="https://hyperparam.app/product">Overview</a></li>
+          <li><a href="https://hyperparam.app/pricing">Pricing</a></li>
+          <li><a href="https://hyperparam.app/enterprise">Enterprise</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="hp-footer-title">Developers</div>
+        <ul class="hp-footer-list">
+          <li><a href="https://hyperparam.app/docs">Docs</a></li>
+          <li><a href="https://blog.hyperparam.app">Blog</a></li>
+          <li><a href="https://github.com/hyparam">GitHub</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="hp-footer-title">Packages</div>
+        <ul class="hp-footer-list">
+          <li><a href="https://github.com/hyparam/hyparquet">hyparquet</a></li>
+          <li><a href="https://github.com/hyparam/icebird">icebird</a></li>
+          <li><a href="https://github.com/hyparam/hightable">hightable</a></li>
+          <li><a href="https://github.com/hyparam/squirreling">squirreling</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="hp-footer-title">Company</div>
+        <ul class="hp-footer-list">
+          <li><a href="https://hyperparam.app/about">About</a></li>
+          <li><a href="https://hyperparam.app/contact">Contact</a></li>
+          <li><a href="https://hyperparam.app/terms">Terms</a></li>
+          <li><a href="https://hyperparam.app/privacy">Privacy</a></li>
+        </ul>
+      </div>
   </div>
 </footer>
