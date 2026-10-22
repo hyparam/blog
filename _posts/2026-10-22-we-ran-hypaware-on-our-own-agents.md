@@ -6,6 +6,10 @@ date: 2026-10-22 09:00:00 -0700
 author: "Hernan Alvarez"
 categories: [engineering]
 tags: [hypaware, coding-agents, agent-sessions, claude-code, codex, LLM-logs]
+image: /assets/images/banner-hypaware-own-agents.jpg
+banner_image: /assets/images/banner-hypaware-own-agents.jpg
+banner_alt: "Rows of agent sessions flowing left to right, with stalled, looping, and failing steps highlighted in red and fixed paths ending in green checks"
+banner_color: "#262836"
 keywords: [HypAware, coding agents, agent sessions, Claude Code, Codex, agent observability, LLM logs, software factory]
 ---
 
